@@ -1,0 +1,7 @@
+tensorflow~=2.2.0
+numpy
+matplotlib~=3.1.3
+plotly
+seaborn
+Pillow~=7.1.2
+pandas~=1.0.3
