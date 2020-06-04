@@ -9,7 +9,8 @@ def preprocess():
         rescale=1. / 255,
         shear_range=0.2,
         zoom_range=0.2,
-        horizontal_flip=True
+        horizontal_flip=True,
+        fill_mode='nearest'
     )
 
     train_generator = train_data_generator.flow_from_directory(
