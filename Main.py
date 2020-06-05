@@ -11,7 +11,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 def main():
     #Visualize.visualize()
     train_gen, test_gen = Preprocess.preprocess()
-    CNN.run(train_gen, test_gen)
+    #CNN.run(train_gen, test_gen)
     #Xception.run(train_gen, test_gen)
     ModelResults.visualize()
 

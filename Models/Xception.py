@@ -10,13 +10,14 @@ def run(train_gen, test_gen):
 
     model.add(base_model)
 
-    model.add(layers.Flatten())
-
     model.add(layers.Dense(
         units=1000,
         activation='relu'
     )
     )
+
+    model.add(layers.Flatten())
+
 
     model.add(layers.Dense(
         units=10,
@@ -39,7 +40,7 @@ def run(train_gen, test_gen):
     )
 
     callbacks = [
-        ModelInformation.CustomCallBack("xception"),
+        ModelInformation.CustomCallBack("xception_2"),
         tf.keras.callbacks.EarlyStopping(patience=20)
     ]
 

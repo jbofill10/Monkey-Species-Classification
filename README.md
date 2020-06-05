@@ -36,3 +36,14 @@ As for the validation, within 5 epochs, the accuracy scores improve by 22% which
 ![image](Charts/TrainVsVal_Loss_Xception.png)
 The loss does not fluctuate much at all, with the exception of some small hills. This means that overall, the model covers a broad spectrum of pictures accurately.
 
+## Xception Model with Flatten
+
+Curious to see what the difference would be
+
+![image](Charts/TrainVsVal_Acc_Xception_Flatten.png)
+
+So the scores the models achieve are roughly the same. The only difference is that with flatten, the peak score is hit in ~half the epochs.
+
+![image](Charts/TrainVsVal_Loss_Xception_Flatten.png)
+
+Same idea here. Both models achieved the same score, but the model with a flatten laayer right before the output layer achieves these results much quicker.
